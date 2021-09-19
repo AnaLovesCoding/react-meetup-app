@@ -6,20 +6,20 @@ function NewMeetupForm(props) {
   const titleInputref = useRef();
   const imageInputref = useRef();
   const addressInputref = useRef();
-  const descrptionInputref = useRef();
+  const descriptionInputref = useRef();
 
   function submitHandler(event) {
     event.preventDefault();
     const enteredTitle = titleInputref.current.value;
     const enteredImage = imageInputref.current.value;
     const enteredAddress = addressInputref.current.value;
-    const enteredDescrption = descrptionInputref.current.value;
+    const enteredDescription = descriptionInputref.current.value;
 
     const meetupData = {
       title: enteredTitle,
       image: enteredImage,
       address: enteredAddress,
-      description: enteredDescrption,
+      description: enteredDescription,
     };
     props.onAddMeetup(meetupData);
   }
@@ -39,8 +39,8 @@ function NewMeetupForm(props) {
           <input type="text" required id="address" ref={addressInputref} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="desscription">Descrption</label>
-          <input type="text" required row="5" ref={descrptionInputref} />
+          <label htmlFor="description">Description</label>
+          <input type="text" required row="5" ref={descriptionInputref} />
         </div>
         <div className={classes.actions}>
           <button>Add Meetup</button>
