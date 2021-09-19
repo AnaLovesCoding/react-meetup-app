@@ -1,18 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oxygen", sans-serif;
   margin: 0;
-  background-color: #fcf3f6;
+  background-color: #dbd8a2;
 }
 
 h1 {
   font-size: 2.5rem;
-  color: #2c292b;
+  color: #1b676b;
+  font-family: "Monoton", cursive;
 }
 
 h2 {
